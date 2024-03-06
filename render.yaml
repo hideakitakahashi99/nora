@@ -9,7 +9,7 @@ services:
     name: nora-college
     env: ruby
     region: Singapore
-    plan: free
+    plan: starter
     buildCommand: "./bin/render-build.sh"
     startCommand: "bundle exec puma -C config/puma.rb"
     envVars:
@@ -19,3 +19,5 @@ services:
           property: connectionString
       - key: RAILS_MASTER_KEY
         sync: false
+      - key: WEB_CONCURRENCY
+        value: 2 # sensible default
