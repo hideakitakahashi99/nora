@@ -36,6 +36,9 @@ class Customer::PagesController < ApplicationController
   def done
   end
 
+  def term
+  end
+
   private
 
   def trial_params

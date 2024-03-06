@@ -10,7 +10,7 @@ Rails.application.routes.draw do
 end
 
   root to:  'customer/pages#home'
-
+  
  
   devise_for :admins, controllers: {
     sessions: 'admin/sessions'
@@ -55,7 +55,7 @@ end
           get 'done'
       end
     end
-
+get 'pages/term'
   end
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
