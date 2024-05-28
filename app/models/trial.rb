@@ -10,7 +10,6 @@ class Trial < ApplicationRecord
     validates :transportation, presence: true
 
     
-    DATE_ITEMS = %w(
-        2024年5月18日（土） 2024年6月7日（金）【苗取り】 2024年6月8日（土）【田植え】 2024年6月15日（土）【苗取り】
+    DATE_ITEMS = %w( 2024年6月7日（金）【苗取り】 2024年6月8日（土）【田植え】 2024年6月15日（土）【苗取り】
     )
 end
